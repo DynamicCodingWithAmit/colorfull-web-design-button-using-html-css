@@ -1,0 +1,124 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color:#faf4ff;
+   display: flex;
+   align-items: center;
+}
+.Navbar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    margin-top:20px;
+}
+/******icon*/
+.icon{
+    width: 80px;
+    height: 80px;
+    box-shadow: -10px -10px 15px rgba(0,0,0,0.2),
+    10px 10px 15px rgba(0,0,0,0.2);
+    transform:skewX(-20deg);
+    font-size: 25px;
+    display:Flex;
+    justify-content:center;
+    align-items: center;
+    border-left: 7px solid transparent;
+}
+.icon i{
+    transform: skewX(20deg);
+}
+.items:hover .icon{
+    border-left:7px solid transparent;
+}
+/***icon color***/
+.Home .icon{
+    color:#2a2a72;
+    border-color:#2a2a72;
+
+}
+.Overview .icon{
+    color:#34a853;
+    border-color: #34a853;
+}
+.Profile .icon{
+    color:#ff2525;
+    border-color: #ff2525;
+}
+.Support .icon{
+    color:#ffc03d;
+    border-color:#ffc03d;
+}
+.Download .icon{
+    color:#4e67eb;
+    border-color: #4e67eb;
+}
+.Setting .icon{
+    color:#6c38b7;
+    border-color: #6c38b7;
+}
+
+/*****Name****/
+.Name{
+    width: 200px;
+    height: 80px;
+    box-shadow: -10px -10px 15px rgba(0,0,0,0.2),
+    10px 10px 15px rgba(0,0,0,0.2);
+    transform: skewX(-20deg);
+    display: flex;
+    align-items: center;
+    border-left: 7px solid transparent;
+    display:none;
+}
+.Name h4{
+    transform: skewX(20deg);
+    font-size: 20px;
+    padding-left: 30px;
+}
+/****name color****/
+.Home .Name{
+    color:white;
+    Background-color:#2a2a72;
+
+}
+.Overview .Name{
+    color:white;
+    Background-color: #34a853;
+}
+.Profile .Name{
+    color:white;
+    Background-color: #ff2525;
+}
+.Support .Name{
+    color:white;
+    Background-color:#ffc03d;
+}
+.Download .Name{
+    color:white;
+    Background-color: #4e67eb;
+}
+.Setting .Name{
+    color:white;
+    Background-color: #6c38b7;
+}
+
+/****hover*****/
+.items:hover .Name{
+    display: flex;
+    animation:display 2s;
+}
+
+@keyframes display{
+    from{
+        width: 0;
+    }
+    to{
+        width: 200px;
+    }
+}
